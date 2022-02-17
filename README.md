@@ -13,6 +13,7 @@
 
 # Crear archivo de dependencias.
 
+     pip freeze > requirements.txt  # Python3
      echo.> requirements.txt
      wsl touch requirements.txt
 
@@ -26,17 +27,17 @@
 
 # Instalar ejecutar migraciones.
 
-    python manage.py makemigrations
-    python manage.py migrate
+    python3 manage.py makemigrations
+    python3 manage.py migrate
 
 
 # Crear un usuario administrador.
 	
-	python manage.py createsuperuser
+	python3 manage.py createsuperuser
 
 # Ejecutar Servidor Web.
 
-    python manage.py runserver
+       python3 manage.py runserver
 	
 
 
