@@ -1,14 +1,18 @@
 # Preparar entorno virtual 
   
+## Windows Powershell.
+
       python -m venv .venv 
 	  
 	  .venv\scripts\activate
 	  
 	  Nota: En powershell permitir ejecutar script con Set-ExecutionPolicy Unrestricted
+	  
+## Linux Shell.
 
-      python3 -m venv .venv
+      python3 -m venv venv
      
-      python3 -m venv .venv\scripts\activate
+      source venv/bin/activate
 
 
 # Crear archivo de dependencias.
@@ -21,7 +25,7 @@
 
     pip install -r requirements.txt
 
-# Crear una aplicacion.
+# Crear una aplicación.
 
     django-admin startproject mysite
 
@@ -35,9 +39,9 @@
 	
 	python3 manage.py createsuperuser
 
-# Ejecutar Servidor Web.
+# Ejecutar Servidor Web local.
 
-       python3 manage.py runserver
+	python3 manage.py runserver
 	
 # Ejecutar sub-rutinas desde shell.
 	
