@@ -39,8 +39,15 @@
 
        python3 manage.py runserver
 	
-
-
+# Ejecutar sub-rutinas desde shell.
 	
-	
+       python3 -c 'from elinares import *; list_ordenes()'
+
+# Ejecutar test desde shell.
+
+      python3 manage.py test animals
+      
+# Ejecutar django shell.   
+
+     python3 manage.py shell
 
